@@ -39,5 +39,5 @@ childNodes并不区分元素节点和属性节点，而在大部分现代浏览�
 选择器API，根据CSS选择器查询特定元素，比如document.querySelector()和querySelectorAll()，这两个方法都是DOM节点的反复，因此支持子查询。返回NodeList(包含匹配节点的类数组对象)，NodeList对象是一个静态列表，不会对应实时的文档结构。
 
 HTML集合 | NodeList
---|--
+---|---
 实时对应文档结构 | 不实时对应文档结构
