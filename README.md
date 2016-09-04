@@ -1,5 +1,5 @@
 # JavaScript_Faster
-高性能JavaScript阅读笔记
+高性能JavaScript阅读笔记，记录总结在阅读过程中的知识点
 
 #### 第一章 [加载和执行](https://github.com/xswei/JavaScript_Faster/tree/master/Loading_and_Execution)
 
