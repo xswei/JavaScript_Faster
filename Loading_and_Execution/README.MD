@@ -59,7 +59,4 @@ xhr.send(null);
 
 - 将script标签放在页面底部，body闭合之前
 - 合并脚本
-- 使用无阻塞加载方式
--- defer，async属性
--- 动态创建script标签
--- XHR对象注入JavaScript代码
+- 使用无阻塞加载方式：defer，async属性，动态创建script标签，XHR对象注入JavaScript代码
