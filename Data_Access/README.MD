@@ -34,12 +34,14 @@ function Add(num1,num2){
 ```
 
 ![image](https://github.com/xswei/JavaScript_Faster/blob/master/Data_Access/images/add.png)
+
 当函数执行时，会创建一个执行环境的内部对象，执行环境定义了函数运行时的环境。函数每次执行时对应的执行环境都是独一无二的，所以多次调用同一个函数，会创建个执行环境，当函数执行完毕，执行环境就被销毁。
 
 每个执行环境都有自己的作用域链，用以解析标识符，当执行环境被创建时，会创建一个被称为"活动对象"的新对象，活动对象中包含了所有的局部变量，命名参数，参数集合以及this。对象会被插入到作用域链最前端，以确保优先搜索。之后才是函数外的其他可访问对象。
 
 
 ![image](https://github.com/xswei/JavaScript_Faster/blob/master/Data_Access/images/add_run.png)
+
 在函数执行过程中每遇到一个变量，就会搜索一次作用域链，先是活动对象(局部变量),然后跨作用域域到作用域链中的下一个对象，直到最后的全局对象。这样就出现了标识符所在对象的"深浅"问题，局部变量在作用域链最前端，最浅，最快被搜索到，而全局变量所在对象在最后，搜索时间也最长，因此标识符的搜索过程会影响性能。
 
 所以在函数中，尽可能使用局部变量，以提高变量的搜索性能。
@@ -61,6 +63,7 @@ function initUI(){
 
 ![image](https://github.com/xswei/JavaScript_Faster/blob/master/Data_Access/images/with.png)
 
+
 try-catch的catch语句与with类似，也会将catch到的对象放在作用域链最顶端，而catch内部的变量会被移动到下一个对象中。此时可以将错误委托给另一个函数来处理。
 
 ##### 闭包
@@ -78,6 +81,7 @@ function assignEvent(){
 在上述示例中，assignEvent()函数执行时，包含了变量id的活动对象被创建，这个活动对象是执行环境作用域链中的第一个对象，第二个是全局对象。当闭包创建时，闭包的scope被初始化为这些对象，也就是闭包作用域链中的第一个对象为assignEvent作用域链中的第一个对象，第二个为全局对象。
 
 ![image](https://github.com/xswei/JavaScript_Faster/blob/master/Data_Access/imagesassignEvents.png)
+
 
 那么问题来了，assignEvent执行完后活动对象随着执行环境一起呗销毁，而包含id的这个互动对象仍然被闭包引用。造成这个对象不能被垃圾回收机制回收，这就造成了额外的内存开销。因此闭包与非闭包相比，会占用更多的内存。
 
@@ -114,6 +118,7 @@ alert(book1.toString()) 	//[object object]
 实例book1的原型是Book.prototype,而Book.prototype的原型是Object，原型之间的关系如下图。
 
 ![image](https://github.com/xswei/JavaScript_Faster/blob/master/Data_Access/images/prototype.png)
+
 
 与作用域链类似，属性如果不是自有属性而是原型链上的，则这个属性越深，搜索性能越差。
 
