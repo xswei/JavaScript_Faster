@@ -80,7 +80,7 @@ function assignEvent(){
 ```
 在上述示例中，assignEvent()函数执行时，包含了变量id的活动对象被创建，这个活动对象是执行环境作用域链中的第一个对象，第二个是全局对象。当闭包创建时，闭包的scope被初始化为这些对象，也就是闭包作用域链中的第一个对象为assignEvent作用域链中的第一个对象，第二个为全局对象。
 
-![image](https://github.com/xswei/JavaScript_Faster/blob/master/Data_Access/images/assignEvents.png)
+![image](https://github.com/xswei/JavaScript_Faster/blob/master/Data_Access/images/assignEvent_run.png)
 
 
 那么问题来了，assignEvent执行完后活动对象随着执行环境一起呗销毁，而包含id的这个互动对象仍然被闭包引用。造成这个对象不能被垃圾回收机制回收，这就造成了额外的内存开销。因此闭包与非闭包相比，会占用更多的内存。
