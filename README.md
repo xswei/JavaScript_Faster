@@ -13,4 +13,6 @@
 
 #### 第七章 [Ajax](https://github.com/xswei/JavaScript_Faster/tree/master/Ajax)
 
+#### 第八章[编程实践](https://github.com/xswei/JavaScript_Faster/tree/master/Programming_Practices)
+
 #### 第九章 [构建并部署高性能应用](https://github.com/xswei/JavaScript_Faster/tree/master/Building_Deploying_JavaScript_Application)
