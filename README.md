@@ -12,3 +12,5 @@
 #### 第六章 [快速响应的用户界面](https://github.com/xswei/JavaScript_Faster/tree/master/Response_Interfaces)
 
 #### 第七章 [Ajax](https://github.com/xswei/JavaScript_Faster/tree/master/Ajax)
+
+#### 第九章 [构建并部署高性能应用(https://github.com/xswei/JavaScript_Faster/tree/master/Building_Deploying_JavaScript_Application)
