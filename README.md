@@ -16,3 +16,5 @@
 #### 第八章 [编程实践](https://github.com/xswei/JavaScript_Faster/tree/master/Programming_Practices)
 
 #### 第九章 [构建并部署高性能应用](https://github.com/xswei/JavaScript_Faster/tree/master/Building_Deploying_JavaScript_Application)
+
+#### 第十章 [工具](https://github.com/xswei/JavaScript_Faster/tree/master/Tools)
