@@ -9,6 +9,8 @@
 
 #### 第四章 [算法和流程控制](https://github.com/xswei/JavaScript_Faster/tree/master/Algorithms_and_FlowControl)
 
+#### 第五章 [字符串和正则表达式](https://github.com/xswei/JavaScript_Faster/tree/master/String_and_RegExp)
+
 #### 第六章 [快速响应的用户界面](https://github.com/xswei/JavaScript_Faster/tree/master/Response_Interfaces)
 
 #### 第七章 [Ajax](https://github.com/xswei/JavaScript_Faster/tree/master/Ajax)
